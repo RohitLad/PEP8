@@ -46,3 +46,32 @@ Multi-line docstrings consists of a summary line just like one lined docstring
 Followed by a blank line and a more elaborate description
 """
 ```
+
+## Naming
+
+- Use ```CapWords``` for class names
+- Use ```lowercase_with_underscores``` for Method, functions and variables
+- Private methods and properties start with a ```__double_underscore```
+- Use ```self``` as the first argument to instance methods
+- Use ```cls``` as the first argument to class methods
+- Never declare lambda functions ```f = lambda x: x**2```
+
+``` python
+class SomeClass:
+    """This is an illustrative class"""
+    
+    __property = None
+    
+    def __init__(self, prop_value):
+        self.__property = prop_value
+        
+    def get_property(self):
+        """ A simple method to get property"""
+        
+        return self.__property
+    
+    @classmethod
+    def default(cls)
+        instance = MyClass("default value")
+        return instance
+```
